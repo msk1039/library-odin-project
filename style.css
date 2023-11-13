@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    height: 120px;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255,251,174);
+    background: linear-gradient(146deg, rgba(255,251,174,1) 0%, rgba(252,178,197,1) 51%, rgba(255,196,247,1) 67%, rgba(183,249,255,1) 100%);
+    box-shadow: 8px 4px 8px 0 rgba(0, 0, 0, 0.3);
+    
+
+}
+
+  .deletbtn{
+    font-size:15px;
+    font-weight:500;
+  }
+#userBookList{
+    list-style: none;
+    display: flex;
+    padding: 50px 0 0 30px;
+}
+#userBookList li{
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    height: auto;
+    border:gray 200;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    background: rgba(250,250 , 250 ,0.3);
+    
+
+}
+#userBookList li div{
+    margin:5px 0 10px 5px;
+}
+
+#userBookList li .deleteBtn{
+    height: 40px;
+    border: solid red 1px;
+    width: 50%;
+    padding: 5px ;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    transition: ease-in-out 0.2s;
+    align-items: center;
+}
+#userBookList li .markRead{
+    height: 40px;
+    border: solid greenyellow 1px;
+    width: 50%;
+    padding: 5px ;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    transition: ease-in-out 0.2s;
+    align-items: center;
+}
+#userBookList li .listbtns{
+    
+    display: flex;
+}
+#userBookList li .deleteBtn:hover{
+    background-color: red;
+    color: white;
+    border: solid red 1px;
+}
+#userBookList li .markRead:hover{
+    background-color: greenyellow;
+    color: white;
+    border: solid greenyellow 1px;
+}
+#userBookList li .markRead:active{
+    background-color: green;
+    color: white;
+    border: solid greenyellow 1px;
+}
+
+
+
+
+#toast-simple{
+    height: 50px;
+}
+#wrapper{
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+   }
+#library{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#toast-simple-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#library-log{
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 10px;
+    width: 200px;
+    position: relative;
+    height: auto;
+    border:gray 200;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    background: rgba(250,250 , 250 ,0.7);
+
+    backdrop-filter: blur(20px);
+}
+.listbtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
